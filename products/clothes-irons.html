@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Boxicons css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-Shopper</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="site-name">BajeZilla</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="../pages/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <i class='bx bx-menu bx-md bar-menu' style="display: none"     onclick="barList()"></i>
+        <div class="bars-dropdown">            
+            <div id="barsDropdown" class="dropdown-content">                
+                <a class="bars-top" href="./pages/about.html">About</a>                
+                <a href="./pages/contact.html">Contact Us</a>
+                <a href="./products/bar-scanners.html">Bar scanners</a>
+                <a href="./products/blenders.html">Blenders</a>
+                <a href="./products/clothes-irons.html">Clothes iron</a>                        
+                <a href="./products/desktop-monitors.html">Pc Monitors</a>    
+                <a href="./products/headphones.html">Headphones</a>    
+                <a href="./products/laptops.html">Laptops</a>
+                <a href="./products/Print-cartridges.html">Printer</a>    
+                <a href="./products/smart-combo.html">Pc combo</a>    
+                <a href="./products/Smart-watches.html">Smart watches</a>    
+                <a class="bars-bottom" href="./products/usb-drive.html">Usb Devices</a>        
+            </div>
+        </div>
+        <div class="cart-container">
+            <!-- cart Icon -->
+            <i class='bx bx-cart bx-lg cart-img' id="scart" data-quantity="0"></i>            
+                <!-- cart -->
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!-- content -->
+                    <div class="cart-content"></div>
+                    <!-- Total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$ 0</div>
+                    </div>
+                    <!-- Buy Button -->
+                    <button type="button" class="btn-buy">Pay Now</button> 
+                    <!-- close cart-->   
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>      
+        </div> 
+    </header>
+    <div class="pages-content">
+        <div class="products-title">
+            <h1>Clothes Irons</h1>
+        </div>
+        <div class="thumbs-container">
+            <div class="products-info">
+                <div class="product-image">
+                    <img src="../images/i1.jpg" alt="clothes-iron" class="center">
+                </div>
+                <div class="product-description">
+                    <p>Super Steamer 1</p>
+                </div>
+                <div class="product-price">
+                    <p>$325.00</p>
+                </div>
+                <div>
+                    <button type="submit" class="add-cart">ADD</button>
+                </div>
+            </div>
+            <div class="products-info">
+                <div class="product-image">
+                    <img src="../images/i2.jpg" alt="clothes-iron" class="center">
+                </div>
+                <div class="product-description">
+                    <p>Super Steamer 2</p>
+                </div>
+                <div class="product-price">
+                    <p>$25.00</p>
+                </div>
+                <div>
+                    <button type="submit" class="add-cart">ADD</button>
+                </div>
+            </div>
+            <div class="products-info">
+                <div class="product-image">
+                    <img src="../images/i3.jpg" alt="clothes-iron" class="center">
+                </div>
+                <div class="product-description">
+                    <p>Super Steamer 3</p>
+                </div>
+                <div class="product-price">
+                    <p>$550.00</p>
+                </div>
+                <div>
+                    <button type="submit" class="add-cart">ADD</button>
+                </div>
+            </div>
+            <div class="products-info">
+                <div class="product-image">
+                    <img src="../images/i4.jpg" alt="clothes-iron" class="center">
+                </div>
+                <div class="product-description">
+                    <p>Super Steamer 4</p>
+                </div>
+                <div class="product-price">
+                    <p>$35.00</p>
+                </div>
+                <div>
+                    <button type="submit" class="add-cart">ADD</button>
+                </div>
+            </div>
+            <div class="products-info">
+                <div class="product-image">
+                    <img src="../images/i5.jpg" alt="clothes-iron" class="center">
+                </div>
+                <div class="product-description">
+                    <p>Super Steamer 5</p>
+                </div>
+                <div class="product-price">
+                    <p>$35.00</p>
+                </div>
+                <div>
+                    <button type="submit" class="add-cart">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------footer---------------------------------->
+
+    <footer class="social-info">
+        <div class="footer-col-1">
+            <h3>Special Offers</h3>
+            <ul>
+                <li>Featured Products</li>
+                <li>BOGO Events</li>
+                <li>Sale Items</li>
+                <li>Discounts</li>
+            </ul>
+        </div>
+        <div class="footer-col-2">
+            <h3>Customer Care</h3>
+            <ul>
+                <li>Loyalty Points</li>
+                <li>Return Policy</li>
+                <li>Membership</li>
+                <li>Rewards</li>
+            </ul>
+        </div>
+        <div class="footer-col-3">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#"><i class="fa fa-instagram instagram-icon fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter twitter-icon fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square facebook-icon fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-square youtube-icon fa-3x"></i></a></li>
+            </ul>
+        </div>
+        <p class="copyright">&copy copyright <span id="fullyear"></span> BajeZilla.com</p>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
+</html>

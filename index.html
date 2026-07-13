@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Boxicons css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-Shopper</title>
+</head>
+<body>
+    
+    <header>
+        <h1 class="site-name">BajeZilla</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><label for="products">Products</label>                    
+                <li><a href="./pages/contact.html">Contact Us</a></li>
+            </ul>          
+        </nav>        
+        <i class='bx bx-menu bx-md bar-menu' style="display: none" onclick="barList()"></i>
+        <!--  -->
+        <div class="bars-dropdown">            
+            <div id="barsDropdown" class="dropdown-content">                
+                <a class="bars-top" href="./pages/about.html">About</a>                
+                <a href="./pages/contact.html">Contact Us</a>
+                <a href="./products/bar-scanners.html">Bar scanners</a>
+                <a href="./products/blenders.html">Blenders</a>
+                <a href="./products/clothes-irons.html">Clothes iron</a>                        
+                <a href="./products/desktop-monitors.html">Pc Monitors</a>    
+                <a href="./products/headphones.html">Headphones</a>    
+                <a href="./products/laptops.html">Laptops</a>
+                <a href="./products/Print-cartridges.html">Printer</a>    
+                <a href="./products/smart-combo.html">Pc combo</a>    
+                <a href="./products/Smart-watches.html">Smart watches</a>    
+                <a class="bars-bottom" href="./products/usb-drive.html">Usb Devices</a>        
+            </div>
+        </div>
+        
+        <div class="cart-container">
+            <!-- cart Icon -->
+            <i class='bx bx-cart bx-md cart-img' id="scart" data-quantity="0"></i>            
+                <!-- cart -->
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!-- content -->
+                    <div class="cart-content"></div>
+                    <!-- Total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$ 0</div>
+                    </div>
+                    <!-- Buy Button -->
+                    <button type="button" class="btn-buy">Pay Now</button> 
+                    <!-- close cart-->   
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>      
+        </div>        
+    </header>
+    <div class="page-content">
+        <div class="side-container">
+            <aside class="additional-info">
+                <h2 class="side-title">Shop...Bargins On</h2>
+                <ul class="side-items">
+                    <li><a href="./products/smart-watches.html">Smart watches</a></li>
+                    <li><a href="./products/mini-clocks.html">Mini-clocks</a></li>
+                    <li><a href="./products/desktop-monitors.html">Desktop Monitors</a></li>
+                    <li><a href="./products/bar-scanners.html">Barcode scanners</a></li>
+                    <li><a href="./products/usb-drives.html">Memory Devices</a></li>
+                    <li><a href="./products/headphones.html">Hi-Fi Headsets</a></li>
+                </ul>
+                <p>
+                <h2>And so much more<br>at <span class="deals">"Great Prices!"</span> </h2>
+                </p>
+            </aside>
+        </div>
+        <div class="thumbs-container">
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/smart-watches.html">
+                        <img src="images/sw1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>Black smart watch</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $325.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/mini-clocks.html">
+                        <img src="images/c1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>Portable Mini clock</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $25.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/headphones.html">
+                        <img src="images/h1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>High fidelity headphones</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $550.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/usb-drives.html">
+                        <img src="images/u1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>USB Data storage</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $35.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/bar-scanners.html">
+                        <img src="images/bcs1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>Bar code scanner</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $225.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/clothes-irons.html">
+                        <img src="images/i1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>Clothes Iron</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $85.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/laptops.html">
+                        <img src="images/L1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>Laptop PC</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $1150.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/headphones.html">
+                        <img src="images/h5.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>Fashion Headphones</p>
+                    <div class="product-price">
+                        <p>Price $90.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/smart-combo.html">
+                        <img src="images/IT-combo.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>IT Combo Package</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $1500.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/print-cartridges.html">
+                        <img src="images/P1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>Printer Cartridges</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $200.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/blenders.html">
+                        <img src="images/B1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>Blender</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $150.00</p>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-image">
+                    <a href="./products/desktop-monitors.html">
+                        <img src="images/m1.jpg" alt="smart-watch" class="center">
+                    </a>
+                </div>
+                <div class="product-description">
+                    <p>Desktop Monitor</p>
+                </div>
+                <div class="product-price">
+                    <p>Price $540.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!---------------------------------footer---------------------------------->
+
+    <footer class="social-info">
+        <div class="footer-col-1">
+            <h3>Special Offers</h3>
+            <ul>
+                <li>Featured Products</li>
+                <li>BOGO Events</li>
+                <li>Sale Items</li>
+                <li>Discounts</li>
+            </ul>
+        </div>
+        <div class="footer-col-2">
+            <h3>Customer Care</h3>
+            <ul>
+                <li>Loyalty Points</li>
+                <li>Return Policy</li>
+                <li>Membership</li>
+                <li>Rewards</li>
+            </ul>
+        </div>
+        <div class="footer-col-3">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram instagram-icon fa-3x"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter twitter-icon fa-3x"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square facebook-icon fa-3x"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-square youtube-icon fa-3x"></i></a></li>
+            </ul>
+        </div>               
+        <p class="copyright">&copy copyright <span id="fullyear"></span> BajeZilla.com</p>
+    </footer>
+<script src="main.js"></script>
+<script src="cart.js"></script>
+
+</body>
+</html>
+
+<!-- onClick="alert('Hello! I am an alert box!!')" -->
+
